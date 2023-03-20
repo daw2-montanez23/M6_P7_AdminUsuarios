@@ -1,9 +1,9 @@
 import './style.css'
 
-import { header } from './componentes/header.js';
-import {admin} from './vistas/admin.js';
-import {home} from './vistas/home.js';
-import {about} from './vistas/about.js';
+import { header } from './componentes/header.js'
+import { admin } from './vistas/admin.js'
+import { home } from './vistas/home.js'
+import { about } from './vistas/about.js'
 
 document.querySelector('#header').innerHTML = header.template
 header.script()

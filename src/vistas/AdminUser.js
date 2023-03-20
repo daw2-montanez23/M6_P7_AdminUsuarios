@@ -1,7 +1,7 @@
-import { usuarios } from "../componentes/Usuario";
+import { usuarios } from '../componentes/Usuario'
 
 export const adminUser = {
-    template:`
+  template: `
     <table class="table table-dark table-striped" id="tabla">
       <thead>
         <tr>
@@ -18,12 +18,11 @@ export const adminUser = {
       </tbody>
     </table>
     `,
-    script:()=>{
-  
-      let html=``
+  script: () => {
+    let html = ''
 
-      usuarios.forEach(usuario => {
-        html+=`    
+    usuarios.forEach(usuario => {
+      html += `    
         <tr id="${usuario.id}">
           <th class="px-5">${usuario.id}</th>
           <td class="px-5">${usuario.nick}</td>
@@ -33,8 +32,8 @@ export const adminUser = {
           <td class="px-5"><button data-id="${usuario.id}" type="button" class="btn btn-info editar"  data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button></td>
         </tr>
         `
-      });
-  
-      document.querySelector('#cuerpoTabla').innerHTML = html
-    }
+    })
+
+    document.querySelector('#cuerpoTabla').innerHTML = html
+  }
 }

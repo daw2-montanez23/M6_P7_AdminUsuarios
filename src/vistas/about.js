@@ -1,10 +1,8 @@
-export const about ={
-    template:`
+export const about = {
+  template: `
     <h1>About</h1>
 `,
-   script:()=>{
-       console.log('hola, soy la vista About');
-      
-   }
+  script: () => {
+    console.log('hola, soy la vista About')
+  }
 }
-    

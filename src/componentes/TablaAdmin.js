@@ -1,5 +1,5 @@
 export const tablaAdmin = {
-    template:`
+  template: `
     <table>
     <caption>Soy la tabla</caption>
     <tr>
@@ -9,7 +9,7 @@ export const tablaAdmin = {
     </tr>
     </table>
     `,
-    script:()=>{
-        console.log('hola, soy la tabla')
-    }
+  script: () => {
+    console.log('hola, soy la tabla')
+  }
 }

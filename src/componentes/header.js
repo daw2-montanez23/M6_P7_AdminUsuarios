@@ -1,7 +1,7 @@
-import { router } from "./router"
+import { router } from './router'
 
-export const header ={
-    template:`
+export const header = {
+  template: `
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" id="home">Home</a>
@@ -18,15 +18,16 @@ export const header ={
     </div>
     </nav>
     `,
-    script:()=>{
-    document.querySelector('#admin').addEventListener('click', ()=>{
-        router.admin()
-    })  
-    document.querySelector('#about').addEventListener('click', ()=>{
-        router.about()
-    })  
-    document.querySelector('#home').addEventListener('click', ()=>{
-        router.home()
-    })    
-}
+  script: () => {
+    document.querySelector('#registro').addEventListener('click', () => {
+      router.registro()
+    })
+    document.querySelector('#login').addEventListener('click', () => {
+      router.login()
+    })
+    document.querySelector('#home').addEventListener('click', () => {
+      router.home()
+      c
+    })
+  }
 }
